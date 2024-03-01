@@ -1,0 +1,285 @@
+.adminDashboard {
+  display: flex;
+  flex-wrap: wrap;
+  // position: relative;
+
+  &-sidebar {
+    // width: 18%;
+    height: 100%;
+  }
+
+  &-content {
+    // width: 82%;
+
+    &-item {
+      height: 100%;
+      width: 130%;
+    }
+  }
+}
+
+.adminManageUser-content {
+  height: 100%;
+  width: 82%;
+}
+
+.pro-sidebar .pro-menu {
+  padding-top: 10px;
+  padding-bottom: 253px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.admin-notify {
+  &-page {
+    z-index: 1000;
+    position: absolute;
+    top: 35px;
+    min-width: 375px;
+    height: 400px;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: #343a40;
+    border: 1px solid #343a40;
+    translate: -160px;
+    overflow: hidden;
+    overflow-y: scroll;
+  }
+
+  &-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+
+  &-user {
+    width: 85%;
+    // translate: 0 -5px;
+
+    &-avt {
+      width: 15%;
+
+      & img {
+        width: 30px;
+        height: 30px;
+        border-radius: 60px;
+        margin-right: 20px;
+      }
+    }
+
+    &-name {
+      font-size: 15px;
+      font-weight: bold;
+      text-align: justify;
+    }
+
+    &-content {
+      text-align: justify;
+      font-size: 13px;
+    }
+
+    &-time {
+      text-align: justify;
+      color: #919196;
+      font-size: 13px;
+    }
+  }
+
+  &-hover {
+    & :hover {
+      background-color: #fff;
+      color: #555;
+      border-radius: 5px;
+    }
+  }
+
+  &-top {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+
+  &-detail-user {
+    width: 90%;
+    color: #343a40;
+
+    &-avt {
+      width: 10%;
+
+      & img {
+        width: 40px;
+        height: 40px;
+        border-radius: 60px;
+        margin-right: 20px;
+      }
+    }
+  }
+
+}
+
+#popup-colse-btn-notify {
+  font-size: 20px;
+  translate: 335px -25px;
+  color: #343a40;
+  cursor: pointer;
+}
+
+.admin-setting {
+  z-index: 1000;
+  position: absolute;
+  top: 35px;
+  min-width: 150px;
+  min-height: 60px;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #343a40;
+  border: 1px solid #343a40;
+  translate: -50px;
+
+
+  &-hover {
+    & a {
+      color: #fff;
+      font-size: 15px;
+    }
+
+    & :hover {
+      background-color: #fff;
+      color: #555;
+      border-radius: 5px;
+      padding: 10px;
+    }
+  }
+}
+
+.contact-infomation {
+  margin-left: 20px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &-name {
+    font-size: 16px;
+    color: var(--regular-green);
+    font-weight: bold;
+
+    & span {
+      color: #9a9a9a;
+    }
+  }
+
+  &-time {
+    color: #9a9a9a;
+    margin-left: 20px;
+  }
+
+  &-role {
+    color: #9a9a9a;
+  }
+
+  &-avt {
+    width: 5%;
+
+    & img {
+      width: 40px;
+      height: 40px;
+      border-radius: 60px;
+      margin-right: 20px;
+    }
+  }
+
+  &-detail {
+    width: 95%;
+  }
+}
+
+#popup-colse-btn-contact {
+  translate: 660px -20px;
+  color: #343a40;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+#contact-input {
+  padding: 10px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+.adminApprovePost-content-item {
+  width: 82%;
+}
+
+#approve-btn {
+  width: 150px;
+  margin-right: 20px;
+}
+
+.css-y0u0hj {
+  margin-bottom: -70px;
+}
+
+.popup-admin{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: -270px;
+  display: flex;
+  width: 121.8%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  z-index: 99999999;
+}
+
+.popup-admin-contact{
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 0;
+  left: -270px;
+  display: flex;
+  width: 123%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  z-index: 99999999;
+}
+
+.popup-inner-contact{
+  padding: 32px;
+  width: 100%;
+  max-width: 720px;
+  background-color: #fff;
+  border-radius: 5px;
+  translate: 0 -325px;
+}
+
+.popup-inner-manage{
+  padding: 32px;
+  width: 100%;
+  max-width: 720px;
+  background-color: #fff;
+  border-radius: 5px;
+  translate: 150px;
+}

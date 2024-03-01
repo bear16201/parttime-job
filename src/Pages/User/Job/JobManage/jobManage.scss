@@ -1,0 +1,284 @@
+.job-manage {
+    &-button {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: auto;
+        background-color: var(--fjobvnaccount-1529599975585937-5x-695200012207031-2defaultalto);
+        border-radius: 50px;
+        padding: 5px 5px;
+
+        &-item {
+            width: 25%;
+            margin: auto;
+            text-align: center;
+        }
+    }
+
+    &-quantity {
+        width: 100%;
+        margin: auto;
+
+        &-item {
+            margin-top: 30px;
+            font-weight: bold;
+            font-size: 20px;
+
+            & span {
+                color: red;
+            }
+        }
+    }
+
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 30px;
+        min-height: 400px;
+    }
+}
+
+.icon {
+    font-size: 24px;
+    transition: transform 0.2s;
+}
+
+.icon:hover {
+    transform: scale(0.8);
+}
+
+#job-manage {
+    &-icon {
+        margin-right: 10px;
+    }
+}
+
+.job-manage-btn {
+    width: 100%;
+    background-color: var(--fjobvnaccount-1529599975585937-5x-695200012207031-2defaultalto);
+    border: none;
+    color: #000;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: none;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.active-btn {
+    width: 100%;
+    background-color: #00b14f;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 30px;
+    font-size: 18px;
+    border-radius: 40px;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.job-list-item-left-manage {
+    display: flex;
+    width: 70%;
+}
+
+#btn-dis-care {
+    width: 130px;
+}
+
+.btn-manage-choice {
+    width: 130px;
+    translate: 30px 10px;
+}
+
+@media only screen and (max-width: 1400px) {
+    .job-manage-btn {
+        width: 100%;
+        background-color: var(--fjobvnaccount-1529599975585937-5x-695200012207031-2defaultalto);
+        border: none;
+        color: #000;
+        padding: 10px 30px;
+        font-size: 15px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .active-btn {
+        width: 100%;
+        background-color: #00b14f;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 30px;
+        font-size: 15px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .btn-manage-choice {
+        width: 130px;
+        translate: 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .job-manage-btn {
+        width: 100%;
+        background-color: var(--fjobvnaccount-1529599975585937-5x-695200012207031-2defaultalto);
+        border: none;
+        color: #000;
+        padding: 10px 30px;
+        font-size: 11px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .active-btn {
+        width: 100%;
+        background-color: #00b14f;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 30px;
+        font-size: 11px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .btn-manage-choice {
+        width: 130px;
+        translate: -13px 10px;
+    }
+
+    .all-job-list-detail {
+        border-radius: 10px;
+        background-color: #fff;
+        width: 47%;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(225, 225, 234);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .job-manage-btn {
+        width: 100%;
+        background-color: var(--fjobvnaccount-1529599975585937-5x-695200012207031-2defaultalto);
+        border: none;
+        color: #000;
+        padding: 10px 30px;
+        font-size: 13px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .active-btn {
+        width: 100%;
+        background-color: #00b14f;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 30px;
+        font-size: 13px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .btn-manage-choice {
+        width: 130px;
+        translate: -25px 10px;
+    }
+
+    .all-job-list-detail {
+        border-radius: 10px;
+        background-color: #fff;
+        width: 47%;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(225, 225, 234);
+    }
+
+    #btn-dis-care {
+        width: 111px;
+        font-size: 13px;
+    }
+
+    .job-list-sumary-item {
+        text-align: center;
+        margin: 5px 5px;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .job-manage-btn {
+        width: 100%;
+        background-color: var(--fjobvnaccount-1529599975585937-5x-695200012207031-2defaultalto);
+        border: none;
+        color: #000;
+        padding: 10px 30px;
+        font-size: 12px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .active-btn {
+        width: 100%;
+        background-color: #00b14f;
+        border: none;
+        color: #fff;
+        font-weight: bold;
+        padding: 10px 30px;
+        font-size: 12px;
+        border-radius: 40px;
+        box-shadow: none;
+        cursor: pointer;
+    }
+
+    .job-manage-button-item {
+        width: 48%;
+        margin: auto;
+        text-align: center;
+    }
+
+    .btn-manage-choice {
+        width: 130px;
+        translate: -25px 10px;
+    }
+
+    .all-job-list-detail {
+        border-radius: 10px;
+        background-color: #fff;
+        width: 100%;
+        margin-right: 20px;
+        margin-bottom: 15px;
+        border: 1px solid rgb(225, 225, 234);
+    }
+
+    #btn-dis-care {
+        width: 111px;
+        font-size: 13px;
+    }
+
+    .job-list-sumary-item {
+        text-align: center;
+        margin: 5px 5px;
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 12px;
+    }
+}

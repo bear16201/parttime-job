@@ -1,0 +1,32 @@
+@use "sass:map";
+@import "theme";
+@import "./variable.scss";
+
+html,
+body {
+    margin: 0;
+}
+
+* {
+    font-family: Open Sans;
+    padding: 0;
+    margin: 0;
+}
+
+body a{
+    text-decoration: none;
+}
+
+.container-all{
+    width: 100%;
+    background-color: var(--light-green);
+    // background-image: url(../../Assets/background-home.jpg);
+    background-size: cover;
+}
+
+// input[type=date]:required:invalid::-webkit-datetime-edit {
+//     color: transparent;
+// }
+// input[type=date]:focus::-webkit-datetime-edit {
+//     color: black !important;
+// }

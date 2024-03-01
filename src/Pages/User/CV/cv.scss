@@ -1,0 +1,256 @@
+.CV {
+    &-page {
+        &-top {
+            width: 100%;
+            height: 265px;
+            background-color: #fff;
+            border-radius: 20px;
+
+            &-1 {
+                height: 190px;
+                background-image: url(https://www.usnews.com/cmsmedia/e2/6b/cbbee6c24081b6191ac5edd50914/smalltown.jpg);
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+
+                &-title {
+                    padding: 25px 30px;
+                    font-size: 40px;
+                    font-weight: bold;
+                    color: #fff;
+                }
+            }
+
+            &-2 {
+                padding: 25px 30px;
+                display: flex;
+            }
+        }
+
+        &-care {
+            width: 100%;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 25px 30px;
+            margin-top: 60px;
+
+            &-top {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &-title {
+                font-size: 25px;
+                font-weight: bold;
+            }
+
+            &-job {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+
+                &-item {
+                    width: 10%;
+                    height: 110px;
+                    text-align: center;
+                    border-radius: 20px;
+                    background-color: var(--light-green);
+                    margin-right: 15px;
+
+                    &-content {
+                        padding: 15px;
+
+                        &-job {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+        &-expirent {
+            &-list {
+                width: 100%;
+                display: flex;
+                background-color: var(--light-green);
+                border-radius: 20px;
+                margin-top: 20px;
+                padding-bottom: 30px;
+            }
+        }
+
+    }
+
+    &-name {
+        font-size: 35px;
+        font-weight: bold;
+        translate: 150px -70px;
+        color: #fff;
+    }
+
+    &-uploadavatar {
+        align-items: flex-start;
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+        width: 112px;
+        translate: 15px -85px;
+
+        &-user {
+            align-self: stretch;
+            background-image: url(https://c.animaapp.com/7RWGhrfx/img/user-png@2x.png);
+            background-position: 50% 50%;
+            background-size: cover;
+            border: 1px dashed;
+            border-color: var(--fjobvnaccount15295999755859375x6952000122070312defaultjapanese-laurel);
+            border-radius: 56px;
+            height: 112px;
+            position: relative;
+            width: 100%;
+        }
+    }
+
+    &-popup {
+        &-btn {
+            display: flex;
+            translate: 500px 40px;
+
+            &-salary {
+                display: flex;
+                translate: 500px 30px;
+            }
+
+            &-job {
+                display: flex;
+                translate: 430px 30px;
+            }
+        }
+    }
+}
+
+#CV-page-icon {
+    font-size: 60px;
+    z-index: 9999999;
+}
+
+.searchBox {
+    padding: 6px;
+}
+
+.cv {
+    &-icon {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100px;
+        margin-top: 10px;
+        margin-left: 210px;
+    }
+
+    &-list-des {
+        padding: 10px 30px;
+    }
+}
+
+.popup {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    z-index: 99999999;
+
+    &-inner {
+        // position: relative;
+        padding: 32px;
+        width: 100%;
+        max-width: 720px;
+        background-color: #fff;
+        border-radius: 20px;
+    }
+
+    &-date-history {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-left {
+            width: 45%;
+            margin-right: 65px;
+        }
+
+        &-right {
+            width: 45%;
+        }
+    }
+}
+
+#popup-colse-btn {
+    // position: absolute;
+    font-size: 20px;
+    translate: 655px -25px;
+    cursor: pointer;
+}
+
+#CV-popup {
+    margin-right: 15px;
+}
+
+#cv-info {
+    
+    width: 1090px;
+    margin-top: 10px;
+    display: inline-block;
+
+    &-select {
+        
+        width: 1090px;
+        margin-top: 10px;
+        display: inline-block;
+        background-color: rgb(233, 236, 239);
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    #cv-info {
+        
+        width: 900px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    #cv-info {
+        
+        width: 715px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    #cv-info {
+        
+        width: 480px;
+        margin-top: 10px;
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #cv-info {
+        
+        width: 305px;
+        margin-top: 10px;
+        display: inline-block;
+        font-size: 11px;
+    }
+}

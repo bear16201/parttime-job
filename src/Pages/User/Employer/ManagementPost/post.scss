@@ -1,0 +1,506 @@
+.icon-container {
+    display: inline-block;
+    /* Để có thể sử dụng thuộc tính transform */
+    transition: transform 0.3s ease;
+    /* Hiệu ứng chuyển động */
+}
+
+.icon-container:hover {
+    transform: scale(0.8);
+    /* Thu nhỏ lại 80% khi hover vào */
+}
+
+.post {
+    &-btn {
+        &-control {
+            background-color: rgb(226 226 226);
+            height: 60px;
+
+            &-item {
+                display: flex;
+                flex-wrap: wrap;
+                margin-left: 25px;
+            }
+        }
+    }
+
+    &-manage {
+        &-item {
+            border-radius: 10px;
+            background-color: #fff;
+            width: 90%;
+            height: 150px;
+            margin: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid rgb(225, 225, 234);
+
+            &-title {
+
+                font-size: 25px;
+                font-weight: bold;
+
+                & a {
+                    text-decoration: none;
+                }
+            }
+
+            &-left {
+                display: flex;
+                width: 80%;
+            }
+
+            &-right {
+                width: 20%;
+            }
+        }
+
+        &-btn {
+            margin-top: 30px;
+        }
+    }
+
+    &-detail {
+        &-tabs {
+            display: flex;
+
+            &-item {
+                display: block;
+                width: 160px;
+                height: 45px;
+                background-color: aliceblue;
+                text-align: center;
+                padding: 10px;
+                border-radius: 42px;
+                cursor: pointer;
+            }
+        }
+
+        &-candidate {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            min-height: 500px;
+        }
+    }
+}
+
+.post-btn {
+    border-radius: 20px;
+    margin: 12px 5px;
+    width: 165px;
+    padding: 5px 5px;
+    text-align: center;
+    background-color: var(--light-green);
+    cursor: pointer;
+}
+
+.post-btn-active {
+    background-color: #00b14f;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.create-post {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 15px 50px;
+
+    &-content {
+        width: 100%;
+        margin-top: 85px;
+        background-color: var(--light-green);
+    }
+
+    &-top {
+        font-size: 30px;
+        font-weight: bold;
+        border-bottom: 1px solid;
+        text-align: center;
+    }
+
+    &-title {
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 20px;
+        margin-top: 20px;
+
+        & span {
+            color: darkgray;
+        }
+    }
+
+    &-role {
+        display: flex;
+        margin-bottom: 20px;
+
+        &-radio {
+            margin-right: 25px;
+            font-size: 16px;
+        }
+    }
+
+    &-choose-role {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    &-info {
+        width: 90%;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px 50px;
+
+        &-job {
+            display: flex;
+            flex-wrap: wrap;
+
+            &-left {
+                width: 45%;
+                margin-right: 52px;
+            }
+
+            &-right {
+                width: 50%;
+            }
+        }
+    }
+
+    &-time {
+        width: 90%;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px 50px;
+    }
+
+    &-gender {
+        width: 90%;
+        margin: auto;
+        background-color: #fff;
+        border-radius: 20px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 15px 50px;
+    }
+
+    &-experient {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-left {
+            width: 45%;
+            margin-right: 10%;
+        }
+
+        &-right {
+            width: 45%;
+        }
+    }
+}
+
+#create-post {
+    &-title {
+        margin-bottom: 20px;
+    }
+
+    &-select {
+        padding: 12px;
+        margin-bottom: 20px;
+    }
+
+    &-des {
+        padding: 20px 10px 90px 10px;
+    }
+
+    &-btn {
+        translate: 665px 0;
+        color: #fff;
+        background-color: purple;
+        margin-right: 15px;
+    }
+}
+
+.active-tab {
+    background: #00b14f;
+    color: #fff;
+    font-weight: bold;
+}
+
+.active-tab ::before {
+    display: block;
+    content: "";
+    background-color: chocolate;
+}
+
+.none-active-post-content {
+    display: none;
+}
+
+
+.post-history-tilte {
+    font-weight: bold;
+    color: #00b14f;
+}
+
+#btn-history {
+    translate: 61px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.infomation-common-post-detail {
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: -5px;
+}
+
+.btn-back{
+    margin-left: 15%;
+}
+
+#btn-back-to-post{
+    font-size: 14px;
+    width: 160px;
+    color: #fff;
+}
+
+.container-all-post-for-admin{
+    background-color: #141b2d;
+    margin-top: -80px;
+}
+
+.box-for-admin {
+    font-family: Open Sans;
+    width: 95%;
+    background-color: #1f2a40;
+    border-radius: 20px;
+    padding-bottom: 10px;
+}
+
+.content-for-admin {
+    font-family: Open Sans;
+    width: 95%;
+    background-color: #1f2a40;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.job-company-detail-for-admin {
+    background-color: #1f2a40;
+    border-radius: 20px;
+    translate: 0px -5px;
+    padding: 15px;
+}
+
+.infomation-common-for-admin {
+    background-color: #1f2a40;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.job-detail-left-name-for-admin {
+    font-size: 30px;
+    font-weight: bold;
+    color: #cccaca;
+    margin: 10px 20px;
+}
+
+.job-detail-title-for-admin {
+    font-size: 20px;
+    font-weight: bold;
+    color: #e1bfbf;
+}
+
+.content-detail-common-for-admin {
+    margin: 10px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #e4f0fb;
+}
+
+.job-detail-content-for-admin {
+    font-weight: 400;
+    color: #ffd993;
+}
+
+.job-detail-left-top-due-for-admin {
+    width: 210px;
+    margin: 20px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #e4f0fb;
+}
+
+.content-title-for-admin {
+    margin: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    color: #e4f0fb;
+}
+
+.content-detail-job-for-admin {
+    margin: 10px 20px;
+    color: #e4f0fb;
+}
+
+.job-company-name-for-admin {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 30px 10px;
+    color: #e4f0fb;
+}
+
+.job-company-address-for-admin {
+    display: flex;
+    margin: 10px 10px;
+    color: #e4f0fb;
+}
+
+.infomation-common-title-for-admin {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e4f0fb;
+}
+
+.job-company-title-for-admin {
+    font-size: 17px;
+    font-weight: bold;
+    margin-right: 20px;
+    min-width: 125px;
+    color: #e4f0fb;
+}
+
+.infomation-content-for-admin {
+    margin: 3px 80px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #e4f0fb;
+}
+
+@media only screen and (max-width: 1400px) {
+    .post-btn {
+        border-radius: 20px;
+        margin: 12px 5px;
+        width: 133px;
+        font-size: 13px;
+        padding: 5px 5px;
+        text-align: center;
+        background-color: var(--light-green);
+        cursor: pointer;
+    }
+
+    .post-btn-active {
+        background-color: #00b14f;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .post-manage-item-title {
+        font-size: 18px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .post-btn {
+        border-radius: 20px;
+        margin: 12px 5px;
+        width: 114px;
+        font-size: 11px;
+        padding: 7px 5px;
+        text-align: center;
+        background-color: var(--light-green);
+        cursor: pointer;
+    }
+
+    .post-btn-active {
+        background-color: #00b14f;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .post-manage-item-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 1076px) {
+    .post-btn {
+        border-radius: 20px;
+        margin: 12px 5px;
+        width: 114px;
+        font-size: 11px;
+        padding: 7px 5px;
+        text-align: center;
+        background-color: var(--light-green);
+        cursor: pointer;
+    }
+
+    .post-btn-active {
+        background-color: #00b14f;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .post-manage-item-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #btn-history {
+        translate: 30px 12px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .create-post-info-job-left {
+        width: 42%;
+        margin-right: 52px;
+    }
+
+    .create-post-info-job-right {
+        width: 49%;
+    }
+}
+
+@media only screen and (max-width: 1267px) {
+    .create-post-info-job-left {
+        width: 44%;
+        margin-right: 52px;
+    }
+}
+
+@media only screen and (max-width: 937px) {
+    .create-post-info-job-left {
+        width: 42%;
+        margin-right: 52px;
+    }
+
+    .create-post-info-job-right {
+        width: 46%;
+    }
+
+    .create-post-role-radio {
+        margin-right: 25px;
+        font-size: 13px;
+    }
+}
